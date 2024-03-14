@@ -12,8 +12,7 @@ function checkGuess() {
     const userGuess = userGuessInput.value;
 
     if (userGuess === secretNumber) {
-        messageElement.textContent = `¡ENHORABUENA CHICOS! 
-        POR FAVOR, PONED POR EL GRUPO EL NÚMERO Y PROCEDEREMOS CON LA RECOMPENSA :)`;
+        messageElement.textContent = `¡LO CONSEGUÍSTEIS CHICOS! AVISADNOS PARA PROCEDER CON LA RECOMPENSA :)`;
         messageElement.style.color = 'green';
         messageElement.style.margin = '10px';
         userGuessInput.disabled = true;
