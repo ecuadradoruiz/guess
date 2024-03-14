@@ -1,59 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: rgb(200, 200, 200);
+    background-color: #f0f0f0;
 }
 
 .main {
-    padding: 40px;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: rgb(240, 240, 240);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    max-width: 400px;
+    width: 100%;
 }
-
 
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
-.container > h1 {
-    font-size: 40px;
+.container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
 }
 
-.container > input {
+.container p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.container input {
     border: none;
     outline: none;
-    border-bottom: 1px solid;
-    padding: 5px;
-    font-size: 20px;
-    width: 200px;
-    background-color: transparent;
-    text-align: center;
+    border-bottom: 2px solid #ddd;
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: border-bottom-color 0.3s ease;
 }
 
-.container > button {
-    padding: 5px 10px;
-    font-size: 18px;
-    margin: 20px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.container input:focus {
+    border-bottom-color: #6c5ce7;
+}
+
+.container button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #6c5ce7;
+    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.container > button:hover {
-    background-color: rgb(180, 180, 180);
+.container button:hover {
+    background-color: #4a3eb1;
 }
