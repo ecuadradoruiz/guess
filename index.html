@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Number Guessing Game</title>
+    <title>JACOBO & ERNESTO GAME</title>
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="./style.css">
@@ -11,19 +11,14 @@
 <body>
     
     <div class="main">
-
         <div class="container">
             <h1>CÓDIGO SECRETO</h1>
-
             <p>COMPROBAR:</p>
-
             <input type="text" id="userGuess">
-
-            <button onclick="checkGuess()">COMPROBAR</button>
-
+            <button id="checkButton" onclick="checkGuess()">COMPROBAR</button>
+            <button id="shareButton" style="display: none;" onclick="shareOnWhatsApp()">AVISAD A MER, PAU, CARLOS, EDU Y BRUNITO</button>
             <p id="message"></p>
         </div>
-
     </div>
 
     <!-- Script JS -->
