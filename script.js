@@ -31,7 +31,7 @@ function checkGuess() {
 }
 
 function shareOnWhatsApp() {
-    const message = encodeURIComponent('¡'+ secretNumber +'!¡Lo hemos adivinado! ¡Queremos la recompensa!'); // Codifica el mensaje
+    const message = encodeURIComponent('🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉 ¡'+ secretNumber +'!¡Lo hemos adivinado! ¡Queremos la recompensa! 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉 '); // Codifica el mensaje
     const url = `https://wa.me/?text=${message}`; // Crea la URL con el mensaje
     window.open(url, '_blank'); // Abre la URL en una nueva ventana
 }
